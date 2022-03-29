@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Layout scrolling-->
+<android.widget.ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <RelativeLayout  android:layout_marginHorizontal="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!-- Judul-->
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:text="@string/title_regis"
+            android:fontFamily="@font/bold"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Form Username-->
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Title"
+            android:background="@color/colorGray"
+            android:ems="10"
+            android:fontFamily="@font/regular"
+            android:hint="@string/Username"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:padding="20dp"
+            android:textColorHint="#546E7A" />
+
+        <!-- Form username-->
+        <EditText
+            android:id="@+id/prodi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username"
+            android:layout_marginTop="12dp"
+            android:background="@color/colorGray"
+            android:ems="10"
+            android:fontFamily="@font/regular"
+            android:hint="@string/Prodi"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:padding="20dp"
+            android:textColorHint="#546E7A" />
+
+        <!-- Form univ-->
+        <EditText
+            android:id="@+id/univ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/prodi"
+            android:layout_marginTop="12dp"
+            android:background="@color/colorGray"
+            android:ems="10"
+            android:fontFamily="@font/regular"
+            android:hint="@string/universitas"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:padding="20dp"
+            android:textColorHint="#546E7A" />
+
+        <!-- Form telp-->
+        <EditText
+            android:id="@+id/telp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/univ"
+            android:layout_marginTop="12dp"
+            android:background="@color/colorGray"
+            android:ems="10"
+            android:fontFamily="@font/regular"
+            android:hint="@string/Phone"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:padding="20dp"
+            android:textColorHint="#546E7A" />
+
+        <!-- Form email-->
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/telp"
+
+            android:layout_marginTop="12dp"
+            android:background="@color/colorGray"
+            android:ems="10"
+            android:fontFamily="@font/regular"
+            android:hint="@string/Email"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:padding="20dp"
+            android:textColorHint="#546E7A" />
+
+        <!-- Form password-->
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email"
+            android:layout_marginTop="12dp"
+            android:background="@color/colorGray"
+            android:ems="10"
+            android:fontFamily="@font/regular"
+            android:hint="@string/Password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:padding="20dp"
+            android:textColorHint="#546E7A" />
+
+        <!-- Form confirm password-->
+        <EditText
+            android:id="@+id/konfirmasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password"
+            android:layout_marginTop="12dp"
+            android:background="@color/colorGray"
+            android:ems="10"
+            android:fontFamily="@font/regular"
+            android:hint="@string/KonfirmasiPassword"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:padding="20dp"
+            android:textColorHint="#546E7A" />
+
+        <!-- Form button-->
+        <Button
+            android:id="@+id/button_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/konfirmasi"
+            android:layout_centerInParent="true"
+            android:width="160dp"
+            android:height="56dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn_primary"
+            android:fontFamily="@font/semibold"
+            android:textSize="20sp"
+            android:text="@string/Register"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+           />
+
+        <!-- Footer-->
+        <TextView
+            android:id="@+id/account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button_register"
+
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/light"
+            android:layout_centerInParent="true"
+            android:text="@string/account_login"
+            android:onClick="login"/>
+
+
+
+    </RelativeLayout>
+
+</android.widget.ScrollView>

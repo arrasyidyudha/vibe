@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="30dp"
+    tools:context=".MainActivity">
+
+    <!-- Judul-->
+    <TextView
+        android:id="@+id/title_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/bold"
+        android:text="@string/title_login"
+        android:textSize="30sp" />
+
+    <!-- Form email-->
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_login"
+
+        android:layout_marginTop="12dp"
+        android:background="@color/colorGray"
+        android:ems="10"
+        android:fontFamily="@font/regular"
+        android:hint="@string/Email"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:padding="20dp"
+        android:textColorHint="#546E7A" />
+
+    <!-- Form password-->
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+        android:layout_marginTop="12dp"
+        android:background="@color/colorGray"
+        android:ems="10"
+        android:fontFamily="@font/regular"
+        android:hint="@string/Password"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:textColorHint="#546E7A" />
+
+    <!-- Form button-->
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_centerInParent="true"
+        android:width="160dp"
+        android:height="56dp"
+    android:layout_marginTop="80dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/btn_primary"
+        android:fontFamily="@font/semibold"
+        android:textSize="20sp"
+        android:text="@string/Login"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:onClick="homepage"/>
+
+    <!-- footer-->
+    <TextView
+        android:id="@+id/account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_login"
+        android:layout_marginTop="100dp"
+
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/light"
+        android:layout_centerInParent="true"
+        android:text="@string/account_regis"
+        android:onClick="register"/>
+
+</android.widget.RelativeLayout>
